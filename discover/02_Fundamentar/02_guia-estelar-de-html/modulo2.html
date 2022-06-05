@@ -152,17 +152,17 @@ atque autem ex temporibus. Velit architecto aperiam iure animi iusto inventore q
     * <span> // Mais usado em linhas
  -->
 <div>
-    Um texto qualquer 
+    Um texto qualquer
     outro texto
 </div>
 
 <span>
     Um texto qualquer
 </span>
- 
+
 <div class="tv">
     <span>Nome</span>
-    <span>Tamanho</span> 
+    <span>Tamanho</span>
     <span>Modelo</span>
 </div>
 
@@ -199,13 +199,17 @@ atque autem ex temporibus. Velit architecto aperiam iure animi iusto inventore q
 </ul>
 
 <h1 id="about">Sobre mim</h1>
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sequi autem tempore non assumenda laudantium. Quos dolores dicta eos animi labore, illum placeat tempora, ea, ducimus facilis cumque accusamus cum!
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum sequi autem tempore non assumenda laudantium. Quos
+dolores dicta eos animi labore, illum placeat tempora, ea, ducimus facilis cumque accusamus cum!
 
 <h2 id="history">História</h2>
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ducimus repudiandae hic suscipit quod, assumenda eveniet voluptatem dolores adipisci quos, laboriosam, distinctio doloremque blanditiis! Dolorem unde dolore qui nihil! Error?
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ducimus repudiandae hic suscipit quod, assumenda
+eveniet voluptatem dolores adipisci quos, laboriosam, distinctio doloremque blanditiis! Dolorem unde dolore qui nihil!
+Error?
 
 <h2 id="works">works</h2>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut veritatis doloribus quod dolores accusantium neque exercitationem ipsa, modi corporis eveniet, eaque placeat optio cupiditate. Laborum quidem harum sit iusto!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut veritatis doloribus quod dolores accusantium neque
+exercitationem ipsa, modi corporis eveniet, eaque placeat optio cupiditate. Laborum quidem harum sit iusto!
 
 <!-- 
     Conteúdo dos hyperlinks
@@ -231,7 +235,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut veritatis dol
         - Onde, no explorador de arquivos, um recurso está localizado
  -->
 
- <ul>
+<ul>
     <li>Opção - 1 <a href="links.html"><strong>&lt; Hyperlinks &gt;</strong></li></a>
     <li>Opção - 2 <a href="links.html" target="_blank"><strong>&lt; Hyperlinks &gt;</strong></li></a>
     <li>Opção - 3 <a href="links.html" download=""><strong>&lt; Hyperlinks &gt;</strong></li></a>
@@ -246,7 +250,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut veritatis dol
     - diretórios raiz (root ou pai)
  -->
 
- <strong><a href="outros/outros.html">abrir a página outros de outro caminho</a></strong>
+<strong><a href="outros/outros.html">abrir a página outros de outro caminho</a></strong>
 
 
 <!-- 
@@ -263,7 +267,121 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut veritatis dol
  -->
 
 
- <ul>
+<ul>
     <li><a href="github.com/JonathanDantasADS/assets/blob/main/img/rex.png">Caminho Relativo</a></li>
     <li><a href="https://github.com/JonathanDantasADS/assets/blob/main/img/rex.png">Caminho Absoluto</a></li>
 </ul>
+
+<table>
+    <caption>Passoas por idade</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Jonathan</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>Apollo</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 Pessoas</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- 
+    2 Lojas
+        Quantos produtos foram produzidos, quantos 
+        vendidos e agrupado por nome dos produtos
+ -->
+
+<br>
+<br>
+
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: rgb(126, 165, 218);">
+        <col span="2" style="background-color: rgb(30, 255, 0);">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2">#</th>
+            <th colspan="2" scope="colgroup">João Dias</th>
+            <th colspan="2" scope="colgroup">Santo Amaro</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- 
+    <link> para ícones personalizados
+ -->
+
+<!-- favicon básico -->
+<link rel="icon" href="/open-iconic/svg/puzzle-piece.svg" />
+
+<!-- 
+     <meta>
+
+     - charset
+     - viewport
+     - author
+     - description
+     - robots
+  -->
+
+<head>
+    <!-- SEO: SEARCH ENGINE OPTIMIZATION (motores de busca = ) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jonathan Dantas">
+    <meta name="description" content="Um website para iniciantes em programação">
+    <!-- <meta name="robots" content="index, follow"> -->
+</head>
+
+<!-- <meta> para redes sociais -->
+
+<head>
+    <!-- Open Graph: facebook -->
+    <meta property="og:image" content="https://cdn-images-1.medium.com/max/texte.png">
+    <meta property="og:description" content="Aqui vem um texto para ser mostrado ao compartilhar no facebook">
+    <meta property="og:title" content="Um site da Rocketseat">
+
+    <!-- twitter -->
+    <meta name="twitter:title" content="Rocketseat">
+</head>

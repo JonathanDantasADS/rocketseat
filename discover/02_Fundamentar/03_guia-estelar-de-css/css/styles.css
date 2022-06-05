@@ -1,0 +1,66 @@
+ /* Anatomia 
+
+ css 
+
+
+ h1 {
+    color: blue;
+    font-size: 60px;
+    background: gray;
+} 
+
+
+* Selector
+* Declaration
+* Properties
+* Property Value
+
+
+- Seletors
+
+    Conecta um elemento HTML com o CSS
+
+    Global selector `*`
+    Element/Type selector `h1, h2, p, div`
+    ID Selector `#box, container`
+    Class Selector `.red, .m-4`
+    Attribute selector, Pseudo-class, Pseudo-element, e outros 
+
+
+ 
+
+* {
+    margin: 0px;
+}
+
+#container {
+    width: 200px;
+}
+
+.m-40 {
+    margin: 40px;
+}
+
+h1, h2 {
+    color: green;
+    font-size: 60px;
+    background: gray;
+} 
+
+ h1 {
+    border: 1px solid red;
+    margin: 100px;
+    padding: 40px;
+} 
+
+ @import 'https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap';
+
+h1 {
+    font: 50px;
+    font-family: 'Kdam','Thmor';
+    color: green;
+}
+
+strong {
+    color: red;
+}  */
