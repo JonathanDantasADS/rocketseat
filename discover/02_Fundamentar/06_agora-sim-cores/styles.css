@@ -1,3 +1,39 @@
 * {
-    background-color: grey;
+    margin: 0;
+}
+
+/* header {
+    height: 100px;
+    border: 8px dashed red;
+    padding: 10%;
+
+    background-color: rgb(57, 57, 122);
+    background-image: url(https://raw.githubusercontent.com/JonathanDantasADS/assets/main/icon/css-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;
+} */
+
+html {
+    color: rgb(255, 255, 255);
+
+    height: 100px;
+    border: 8px dashed red;
+    padding: 10%;
+
+    background-color: rgb(57, 57, 122);
+    background-image: url(https://raw.githubusercontent.com/JonathanDantasADS/assets/main/icon/css-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-attachment: fixed;
+
+    background: rgb(57, 57, 122) url(https://raw.githubusercontent.com/JonathanDantasADS/assets/main/icon/css-icon.png) no-repeat;
+
+
+    background: radial-gradient(green, rgb(85, 21, 214));
 }
