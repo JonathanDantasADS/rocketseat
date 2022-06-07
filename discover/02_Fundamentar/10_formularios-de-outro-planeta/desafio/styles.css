@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: rgb(37, 103, 47);
+}
+
+div {
+    padding-top: 15px;
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 161px;
+}
+
+

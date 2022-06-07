@@ -25,9 +25,9 @@ Controlar onde, na página, o elemento  irá ficar, alterando o fluxo normal dos
 
 # Flexbox
 
-* Nos permite posicionar os elementos dentro da caixa
-* Controle em uma dimensão (horizontal ou vertical)
-* Alinhamento, direcionamento, ordernar e tamanhos
+    - Nos permite posicionar os elementos dentro da caixa
+    - Controle em uma dimensão (horizontal ou vertical)
+    - Alinhamento, direcionamento, ordernar e tamanhos
 
 ```css
 div.parent {
@@ -37,18 +37,18 @@ div.parent {
 
 ## flex-direction
 
-* Qual a direção do flex: horizontal ou vertical
-* row | column
+- Qual a direção do flex: horizontal ou vertical
+- row | column
 
 ## alinhamento
 
-* justify-content
-* align-items
+    - justify-content
+    - align-items
 
 
 # Grid 
 
-* Posicionamento dos elementos dentro da caixa
-* Posicionameneto horizontal e vertical ao mesmo tempo
-* Pode ser flexível ou fixo
-* Cria espaços para os elementos filhos habilitarem
+    - Posicionamento dos elementos dentro da caixa
+    - Posicionameneto horizontal e vertical ao mesmo tempo
+    - Pode ser flexível ou fixo
+    - Cria espaços para os elementos filhos habilitarem
