@@ -1,0 +1,23 @@
+body {
+    margin: 15px;
+    background-color: rgba(48, 44, 44, 0.816);
+    width: 100vh;
+}
+
+
+#caixa {
+    display: flex;
+    flex-direction: column;
+    
+    
+    background-color: rgb(109, 109, 216);
+}
+
+#titulo {
+    padding: 0px 15px 0px 15px;
+    font-size: 25px;
+}
+
+div {
+    padding-top: 15px;
+} 
