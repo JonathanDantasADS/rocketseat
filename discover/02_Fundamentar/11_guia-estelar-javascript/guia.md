@@ -135,8 +135,109 @@ O bloco, também criará um novo escopo, Chamamos de `block-scoped`
 console.log('> existe y antes do bloco? ', y)
 
 {
+    console.log('> existe x depois de bloco ', y)
     let y = 0
 }
 
 console.log('> existe x depois de bloco ', y)
 ```
+
+# Para criar nomes 
+
+    * JS é case-sensitive (sensível ao caso)
+    * JS aceita a cadeia de caracteres Unicode
+
+    - Posso: 
+        * Iniciar com esses caracteres especiais: $ _
+        * Iniciar com letras
+        * Colocar acentos
+        * Letras maísculas e minúsculas fazem diferença
+
+    - Não Posso:
+        * Iniciar com números
+        * Colocar espaços vazinhos no nome
+
+    - Ideal: 
+        * Criar nomes que fazem sentido
+        * Que explique o que a variável é ou faz
+        * camelCase
+        * snake_case
+        * Escrever em inglês
+    
+```javascript
+    // Variáveis e tipos de dados
+    // declaração or declaration
+    var name
+
+    // assignment or atribuição de valores
+    name = "Jonathan"
+
+    // que tipo de dado foi colocado na variável
+
+    console.log(name)
+
+    // agrupamento de declarações
+    let age, isHuman
+
+    age = 28
+    isHuman = true
+
+    // console.log(`${name} ${age} ${isHuman}`)
+    console.log(name, age, isHuman)
+
+    // escrita de texto + variáveis
+    // Concatenando valores
+    console.log('Me chamo ' + name + ', e tenho ' + age + ' anos')
+    
+    // interpolando valores
+    console.log(`${name} tem ${age} anos`)
+
+
+``` 
+## Object 
+
+```javascript
+
+   const person = {
+    name: 'Jonathan',
+    age: 28,
+    weight: 72.0,
+    isAdmin: true
+   }
+
+
+//    console.log(person.name)
+      console.log(`${person.name} tem ${person.age} anos`)
+
+   // Object
+
+   const person = {
+    name: 'Jonathan',
+    age: 28,
+    weight: 72.0,
+    isAdmin: true
+   }
+
+
+//    console.log(person.name)
+      console.log(`${person.name} tem ${person.age} anos`)
+```
+
+# Array
+
+```javascript
+  // Arrayy
+
+  const animals = [
+    'Lion',
+    'Monkey',
+    {
+        name: 'Cat',
+        age: 3
+    }
+  ]
+
+  // Acessar valores dentro do Array
+  console.log(animals[2].name)
+```
+

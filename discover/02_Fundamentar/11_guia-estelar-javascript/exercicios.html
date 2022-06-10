@@ -1,0 +1,126 @@
+<script>
+    // 1. Declare uma variável de nome weight
+
+    let weight
+
+    // 2. Que tipo de dado é a variável acima?
+
+    console.log(typeof weight)
+
+    /* 3. Declare uma variável e atribua valores para cada um dos dados
+  
+      * name: String
+      * age: Number (integer)
+      * starts: Number (float)
+      * isSubscribed: Boolean
+  */
+
+    const name = 'Jonathan'
+    let age = 28
+    let stars = 4.8
+    isSubscribed = true
+
+    // or
+
+    let pessoa = {
+        name: 'Jonathan',
+        age: 28,
+        starts: 12.000,
+        inSubscribed: true
+    }
+
+
+    /*
+        4. A variável student abaixo é de que tipo de dados?
+    
+        4.1 Atribua a ela as mesmas propriedades e valores do exercício 3.
+    
+        4.2 Mostre no console a seguinte mensagem:
+    
+            <name> de idade <age> pesa <weight> kg.
+    
+            Atenção, substitua <name> <age> e <weight> pelos valores de cada propriedade do objeto
+    
+    */
+    let student = {
+        name: 'Jonathan',
+        age: 28,
+        weight: 72,
+        starts: 12.000,
+        inSubscribed: true
+    }
+
+
+    console.log(`${student.name} de idade ${student.age} pesa ${student.weight} kg.`) // Interpolação
+    console.log(student.name + " de idade " + student.age + " pesa " + student.weight + " kg.") // Concatenação
+
+    console.log(typeof student)
+
+
+    /*
+        5. Declare uma variável do tipo Array, de nome students e atribua a ela nenhum valor
+        ou seja, somente o Array vazio 
+    
+    */
+
+    let students = []
+
+    /*
+        6. Retribua valor para a variável acima. colocando dentro dela o 
+        objeto student da questão 4. (Não copiar e colar o objeto, mas usa 
+        o projeto criado e inserir ele no array)
+              
+    */
+    students = [
+        student
+    ]
+    
+    /*
+        7. Coloque no console o valor da posição zero do Array acima
+    
+    */
+    
+    console.log(students[0])
+    console.log(students[0].name)
+    console.log(students[0].age)
+    console.log(students[0].weight)
+    console.log(students[0].starts)
+    console.log(students[0].true)
+
+    /*
+        8. Crie um novo student e coloque na posição 1 do array
+    */
+
+
+    const teacher = {
+        name: 'Johnny',
+        age: 27,
+        weight: 72,
+        starts: 5.0,
+        inSubscribed: true
+    }
+
+
+    students = [
+        student,
+        teacher
+    ]
+        // OR
+    students[1] = teacher
+
+
+    console.log(students[1])
+
+
+    /*
+        9. Sem rodar o código responda qual é a resposta 
+        do código abaixo e por que? Após sua reposta, rode o 
+        código e veja se você acertou.
+
+        console.log(a)
+        var a = 1
+    */
+
+    console.log(a)
+    var a = 1
+</script>
