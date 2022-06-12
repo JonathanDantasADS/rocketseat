@@ -241,3 +241,220 @@ console.log('> existe x depois de bloco ', y)
   console.log(animals[2].name)
 ```
 
+## function scope
+
+```javascript
+  let subject = 'create video'
+
+  function createThink(subject) {
+    subject = 'study'
+    return subject
+  }
+
+  console.log(createThink(subject))
+  console.log(subject)
+  ```
+
+## function hoisting
+
+```javascript
+sayMyName();
+
+function sayMyName() {
+  console.log('Jonathan')
+}
+```
+
+
+## arrow function
+```javascript
+const sayMyName = (name) => {
+
+  console.log(name)
+}
+
+sayMyName(`JonathanDantasADS`)
+```
+
+## callback function
+
+```javascript
+
+function sayMyName(name) {
+  console.log('antes de executar a função callback')
+  name()
+  console.log('depois de executar a call back')
+}
+
+sayMyName(
+  () => {
+    console.log('Iniciando uma callback')
+  }
+)
+
+```
+
+## Function() constructor 
+
+    * expressão new
+    * criar um novo objeto
+    * this keyword
+
+```javascript
+
+function Person(name) {
+  this.name = name
+  this.walk = function() {
+      return "andando"
+  }
+}
+
+const jonathan = new Person("JonathanDantas")
+const johnny = new Person("JohnnyJeferson")
+console.log(jonathan.walk())
+console.log(johnny.walk())
+
+```
+
+## Prototype
+
+    * prototype-based language
+    * prototype chain
+    * __proto__
+
+
+## Type conversion (typecasting) vs Type conversion
+
+    * Alteração de um tipo de dado para outro tipo
+
+```javascript
+
+console.log(Number('9') + 5)
+
+```
+
+## Manipulando Strings e Números
+
+## Transformar String em Número e Número em Strings
+
+```javascript
+
+let string = "123"
+console.log(Number(string))
+let number = 321
+console.log(String(number))
+
+```
+
+## Contar quantos caracteres tem uma palavra e quantos dígitos tem um número
+
+```javascript
+let word = "Paralelepipedo"
+console.log(word.length)
+
+let number = 1234
+console.log(String(number).length)
+```
+
+## Transformando um número quebrado com 2 casas decimais e trocar ponto por vírgula
+
+```javascript
+
+  let number = 435312345.33452345
+  console.log(number.toFixed(2).replace(".",","))
+
+```
+
+## Transforme letras minúsculas em maiúsculas. Faça o contrário disso também
+
+
+```javascript
+
+let wordA = "Programar é muito bacana cara!"
+console.log(wordA.toUpperCase())
+
+let wordB = "Programar é muito bacana cara!"
+console.log(wordB.toLowerCase())
+
+```
+
+## Verificar se o texto contém a palavra programação
+
+```javascript
+
+let phrase = "Eu quero viver de Programação!"
+console.log(phrase.includes("programacao")) // Case Sensitive
+
+```
+
+## Separe um texto que contem espaços, em um novvo array onde cada texto é uma posição do array. Depois disso, transforme o array em um texto e onde eram espaços, coloque _
+
+```javascript
+
+let phrase = "Eu quero viver de Programação!"
+let myArray = phrase.split(" ")
+let phraseWithUnderscore = myArray.join("_")
+console.log(phraseWithUnderscore.toLowerCase())
+
+```
+
+## Manipulando Arrays
+
+## Criar Array com construtor 
+
+```javascript
+
+let myArray = new Array('a', 'b', 'c')
+console.log(myArray)
+
+```
+
+# Contar elementos de um array
+
+```javascript
+  // console.log(["a", "b", "c"][2])
+  console.log(["a", "b", "c"].length)
+```
+
+# Transformar uma cadeia de caracteres em elementos de um array
+
+```javascript
+  let word = "manipulação"
+  console.log(Array.from(word))
+```
+
+```javascript
+let techs = ["html", "css", "js"]
+
+  //  * Adicionar um item no fim
+
+techs.push("SQL")
+
+  //  * adicionar no começo
+
+techs.unshift("nodejs")
+
+  //  * remover do fim
+
+techs.pop()
+
+  //  * remover do começo
+
+techs.shift()
+
+  //  * pegar somente alguns elementos do array
+
+console.log(techs.slice("0","3"))  # Posição 0-2 e Elemento 1-3
+
+  //  * remover 1 ou mais items em qualquer posição do array
+
+techs.splice("1","2")
+
+  //  * encontrar a posição de um elemento no array
+    
+let index = techs.indexOf("css")
+techs.splice(index, 1)
+
+console.log(techs)
+
+```
