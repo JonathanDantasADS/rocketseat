@@ -458,3 +458,225 @@ techs.splice(index, 1)
 console.log(techs)
 
 ```
+
+
+# Expressões e Operadores
+
+    - Expressions 
+    - Operators
+        Binary
+        Unary
+        Ternary
+
+    ```javascript
+        let number = 1
+        console.log(number + 1)
+    ```
+
+    ```javascript
+        let number = 1
+        console.log(--number)
+        console.log(typeof number)
+    ```
+
+    ```javascript
+        let number = 1
+        console.log(false ? 'alo' : 'nada')
+    ```
+
+# new 
+
+    - left-hand-side expression
+    - criar um novo objeto
+
+```javascript
+
+let name = new String('Jonathan')
+name.surName = "Dantas"
+let age = new Number(23)
+console.log(name.surName, age)
+
+let data = new Date('2022-06-12')
+console.log(data.__proto__)
+
+```
+
+# Operadores Unários | typeof | delete
+
+```javascript
+
+const person = {
+    name: "Jonathan",
+    age: 28,
+}
+
+delete person.age
+
+console.log(person)
+
+```
+
+
+# Operadores Aritiméticos
+
+```javascript
+
+// multiplicação
+
+  console.log(3.4 * 5.5)
+
+// divisão
+
+  console.log(12 / 2)
+
+// soma
+
+  console.log(34 + 67)
+
+// subtração
+
+  console.log(44 - 40)
+
+// resto da divisão
+
+  let remainder
+
+  remainder = 11 % 10
+  console.log(remainder)
+
+// incremento ++ 
+
+  let increment = 1
+
+  increment ++ 
+  console.log(increment++) // depois
+  console.log(++increment) // antes
+  console.log(increment)
+
+// decremento --
+
+  let decrement = 0
+  decrement-- // depois
+  console.log(--decrement) // antes
+
+// exponencial
+
+  console.log(5 ** 2);
+
+```
+
+# Operadores de comparação
+
+```javascript
+// Irá comparar valores e retornara um Boolean com resposta á comparação
+  
+  let one = 1
+  let two = 2
+
+  //  == igual a 
+
+  console.log( two == 1 )
+  console.log( one == "1" )
+
+  // != diferente de 
+  console.log(one != two)
+  console.log(one != 1)
+  console.log(one != "1")
+
+  // === estritamente igual a 
+  console.log( two === 1 )
+  console.log( one === "1" )
+
+  // !== estritamente diferente de 
+  console.log(one !== two)
+  console.log(one !== 1)
+  console.log(one !== "1")
+
+  // > Maior que
+  console.log( one > two )
+
+  // >= Maior igual a
+  console.log( one >= 1 )
+  console.log( two >= 1 )
+
+  // <  Menor que
+  console.log( one < two )
+
+  // <= Menor igual a 
+  console.log( one <= two )
+  console.log( one <= 1 )
+  console.log( one <= 0 )
+```
+
+# try/catch
+
+```javascript
+
+function sayMyName(nome = '') {
+    if (nome === ''){
+        throw 'Nome é obrigatório'
+    }
+    console.log(nome)
+}
+
+try {
+    sayMyName("Jonathan")
+} catch(e) {
+    console.log(e)
+}
+
+console.log('Após ao try/catch')
+```
+
+# for
+
+ - Estrutura de repetição
+ - for
+ - break - para a execução do loop
+ - continue - pula a execução do momento
+
+```javascript
+for(let i = 1; i < 10; i++) {
+    if(i === 5) {
+        console.log('Teve pulo')
+        continue;
+    }
+    console.log(i)
+}
+```
+
+# while
+ - Estrutura de repetição
+ - while
+
+```javascript
+let i = 0;
+while(i < 10){
+    console.log(i)
+    i ++
+}
+```
+
+# for ... of
+
+```javascript
+let nome = 'Jonathan'
+let nomes = ['João', 'Paulo', 'Pedro']
+
+for(let nome of nomes) {
+    console.log(nome)
+}
+```
+
+# for .. in 
+
+```javascript
+let person = {
+    nome: 'Jonathan',
+    age: 30,
+    weight: 88.6
+}
+
+for(let p in person){
+console.log(p)
+```

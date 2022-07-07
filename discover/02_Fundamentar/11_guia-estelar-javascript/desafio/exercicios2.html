@@ -1,0 +1,92 @@
+<!-- 
+
+    Tranformar notas escolares
+
+Crie um algoritmo que transforme as notas do sistema 
+númerico para sistema de notas em caracteres Tipo A, B e C
+
+* de 90 para cima - A
+* entre 80 - 89   - B
+* entre 70 - 79   - C
+* entre 60 - 69   - D
+* menor que 60    - F 
+
+-->
+
+<script>
+
+function getNota(valor){
+
+    let nota = valor
+    
+    if(nota < 60 && nota > 0)
+        console.log('Sua nota é F')
+    else if(nota < 69)
+        console.log('Sua nota é D')
+    else if(nota < 79 )
+        console.log('Sua nota é C')
+    else if(nota < 89)
+        console.log('Sua nota é B')
+    else if(nota >= 90 && nota <= 100)
+        console.log('Sua nota é A')
+    else
+        return 'nota inválida'
+}
+
+getNota(60)
+
+</script>
+
+<!-- 
+
+    Sistema de gastos familiar
+
+Crie um objeto que possuirá 2 propriedades, ambas do tipo array:
+    * receitas: []
+    * despesas: []
+
+Agora, crie uma função que irá calcular o total de receitas e despesas 
+e irá mostrar uma mensagem se a família está com saldo positivo
+ou negativo, seguido do valor do saldo.
+
+ -->
+<script>
+
+    let gastosF = {
+        receitas: [0], 
+        despesas: [0] 
+    };
+
+    let totalReceitas = 0
+    let totalDespesas = 0
+
+    function calcularTotal(){
+        for(let rec of gastosF.receitas){
+            totalReceitas += rec
+        }
+
+        for(let des of gastosF.despesas){
+            totalDespesas += des
+        }
+
+        total = totalReceitas - totalDespesas
+
+        if(total < 0)
+        console.log(`Seu saldo está negativo, R$ ${total.toFixed(2)}`)
+        else if(total > 0)
+        console.log(`Seu saldo está positivo, R$ ${total.toFixed(2)}`)
+        else if (total == 0)
+        console.log(`Saldo total é R$ ${total.toFixed(2)}`)
+        else
+        console.log('Valor informado inválido')
+    };
+
+    calcularTotal();
+    
+</script>
+
+<script>
+
+
+    
+</script>
