@@ -53,8 +53,8 @@ ou negativo, seguido do valor do saldo.
 <script>
 
     let gastosF = {
-        receitas: [0], 
-        despesas: [0] 
+        receitas: [10, 20, 130], 
+        despesas: [5.10, 3,80] 
     };
 
     let totalReceitas = 0
@@ -85,8 +85,41 @@ ou negativo, seguido do valor do saldo.
     
 </script>
 
-<script>
+<!-- 
+    Celsius em fahrenheit
 
+    Crie uma função que recebea uma string em celsius 
+    ou fahrenheit e faça a transformação de uma unidade para outra
 
-    
-</script>
+    C = (F - 32) * 5/9
+
+    F = C * 9/5 + 32
+
+ -->
+
+ <script>
+
+    let fahrenheit = '45'
+    let celsius = '30'
+
+    if(fahrenheit != '' && fahrenheit != null){
+        console.log(fahrenheit)
+    }
+    else if(celsius != '' && celsius != null){
+        console.log(celsius)
+    }
+
+    function alterFahrenheit(){
+        newCelsius = (parseInt(fahrenheit) - 32) * 5/9
+        return `O Celsius desse fahrenheit é ${newCelsius.toFixed(2)}`
+    }
+
+    function alterCelsius(){
+        newFahrenheit = parseInt(celsius) * 9/5 + 32
+        return `O fahrenheit desse Celsius é ${newFahrenheit.toFixed(2)}`
+    }
+
+    console.log(alterCelsius())
+    console.log(alterFahrenheit())
+
+ </script>
